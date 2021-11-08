@@ -260,7 +260,7 @@ a::after {
   color: #757575;
 }
 .footer {
-  display: block;
+  display: flex;
   background-color: #2f303a;
   height: 252px;
 }
@@ -749,6 +749,74 @@ a::after {
   border-radius: 4px;
 
   background-color: #f5f4fa;
+}
+
+.footer-newsletter {
+  float: right;
+  display: block;
+  width: 570px;
+  height: 86px;
+  margin-right: 0px;
+  margin-top: 72px;
+}
+
+.footer-newsletter-title {
+  width: 210px;
+  height: 16px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-left: 0;
+  padding: 0;
+
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-newsletter-input {
+  width: 358px;
+  height: 50px;
+  margin-left: 0;
+  margin-bottom: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+  font-size: 16px;
+  line-height: 1.25em;
+  align-items: center;
+  letter-spacing: 0.03em;
+  padding: 15px;
+}
+
+.footer-newsletter-button {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  float: right;
+}
+.footer-newsletter-button-text {
+  width: 85px;
+  height: 30px;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .backdrop {
