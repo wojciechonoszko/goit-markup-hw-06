@@ -468,6 +468,47 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close="">X</button>
+        <form>
+          <p>Zostaw swoje dane w formularzu poniżej</p>
+          <label>
+            <p>Imię</p>
+            <input class="modal-user-name" type="name" name="name" />
+            <svg class="icon-user-name">
+              <use href="./images/icons.svg#icon-modal-person"></use>
+            </svg>
+          </label>
+          <label>
+            <p>Telefon</p>
+            <input
+              type="password"
+              name="password"
+              minlength="5"
+              maxlength="12"
+            />
+          </label>
+          <label>
+            <p>Email</p>
+            <input type="email" name="email" />
+          </label>
+          <label>
+            <p>Komentarz</p>
+            <textarea
+              name="feedback"
+              rows="5"
+              placeholder="Type your message here..."
+            ></textarea>
+          </label>
+          <div class="modal-checbox">
+            <input type="checkbox" name="modal-rules" value="modal-rules" />
+            <p>
+              Oświadczam iż akceptuję
+              <a class="modal-rules" href="#">Regulamin</a> i
+              <a class="modal-rules" href="#">Politykę Prywatności.</a>
+            </p>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
