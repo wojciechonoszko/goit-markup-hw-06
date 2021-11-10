@@ -468,46 +468,46 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close="">X</button>
-        <form>
-          <p>Zostaw swoje dane w formularzu poniżej</p>
-          <label>
-            <p>Imię</p>
+        <form class="modal-form-contact">
+          <p class="modal-head-text">Zostaw swoje dane w formularzu poniżej</p>
+          <label class="modal-label-name">
+            <p class="modal-text-name">Imię</p>
             <input class="modal-user-name" type="name" name="name" />
             <svg class="icon-user-name">
               <use href="./images/icons.svg#icon-modal-person"></use>
             </svg>
           </label>
-          <label>
-            <p>Telefon</p>
+          <label class="modal-label-phone">
+            <p class="modal-text-phone">Telefon</p>
             <input
-              type="password"
-              name="password"
-              minlength="5"
-              maxlength="12"
+              class="modal-phone-number"
+              type="tel"
+              name="phone_number"
             />
           </label>
-          <label>
-            <p>Email</p>
-            <input type="email" name="email" />
+          <label class="modal-label-email">
+            <p class="modal-text-email">Email</p>
+            <input  class="modal-email" type="email" name="email" />
           </label>
-          <label>
-            <p>Komentarz</p>
+          <label class="modal-label-feedback">
+            <p class="modal-text-feedback">Komentarz</p>
             <textarea
+              class="modal-textarea"
               name="feedback"
               rows="5"
-              placeholder="Type your message here..."
+              placeholder="Wprowadź tekst"
             ></textarea>
           </label>
-          <div class="modal-checbox">
+          <div class="modal-checkbox">
             <input type="checkbox" name="modal-rules" value="modal-rules" />
-            <p>
+            <p class="modal-checkbox-text">
               Oświadczam iż akceptuję
               <a class="modal-rules" href="#">Regulamin</a> i
               <a class="modal-rules" href="#">Politykę Prywatności.</a>
             </p>
           </div>
 
-          <button type="submit">Submit</button>
+          <button class="modal-form-button" type="submit">Wyślij</button></div>
         </form>
       </div>
     </div>
