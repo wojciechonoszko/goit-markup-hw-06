@@ -68,10 +68,7 @@ body {
   margin-right: 345px;
 }
 
-.menu-item-agencja {
-  border-bottom: ;
-}
-
+.menu-item-portfolio,
 .menu-item-agencja,
 .menu-item {
   display: block;
@@ -92,20 +89,25 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu-item-portfolio:hover,
+.menu-item-portfolio:focus,
+.menu-item-agencja:hover,
+.menu-item-agencja:focus,
 .menu-item:hover,
 .menu-item:focus {
   color: #2196f3;
 }
 
-a::after {
+.menu-item-portfolio::after,
+.menu-item-agencja::after {
   content: "";
   display: block;
   width: 53px;
   height: 4px;
   position: absolute;
   bottom: -32px;
-  background-color: transparent;
-  border-radius: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
 }
 
 .menu-item:hover::after {
