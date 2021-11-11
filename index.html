@@ -33,7 +33,9 @@
             </a>
             <nav class="menu">
               <ul class="menu-list">
-                <li><a href="index.html" class="menu-item">Agencja</a></li>
+                <li>
+                  <a href="index.html" class="menu-item-agencja">Agencja</a>
+                </li>
                 <li>
                   <a href="portfolio.html" class="menu-item">Portfolio</a>
                 </li>
@@ -472,34 +474,39 @@
           <p class="modal-head-text">Zostaw swoje dane w formularzu poniżej</p>
           <label class="modal-label-name">
             <p class="modal-text-name">Imię</p>
-            <input class="modal-user-name" type="name" name="name" />
-            <svg class="icon-user-name">
-              <use href="./images/icons.svg#icon-modal-person"></use>
-            </svg>
+            <div>
+              <input class="modal-user-name" type="name" name="name" />
+              <svg class="icon-user-name">
+                <use href="./images/icons.svg#icon-modal-person"></use>
+              </svg>
+            </div>
           </label>
           <label class="modal-label-phone">
             <p class="modal-text-phone">Telefon</p>
-            <input
-              class="modal-phone-number"
-              type="tel"
-              name="phone_number"
-            />
+            <input class="modal-phone-number" type="tel" name="phone_number" />
           </label>
           <label class="modal-label-email">
             <p class="modal-text-email">Email</p>
-            <input  class="modal-email" type="email" name="email" />
+            <input class="modal-email" type="email" name="email" />
           </label>
           <label class="modal-label-feedback">
             <p class="modal-text-feedback">Komentarz</p>
-            <textarea
-              class="modal-textarea"
-              name="feedback"
-              rows="5"
-              placeholder="Wprowadź tekst"
-            ></textarea>
+            <div class="modal-textarea-container">
+              <textarea
+                class="modal-textarea"
+                name="feedback"
+                rows="7"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+            </div>
           </label>
           <div class="modal-checkbox">
-            <input type="checkbox" name="modal-rules" value="modal-rules" />
+            <input
+              class="modal-checkbox-input"
+              type="checkbox"
+              name="modal-rules"
+              value="modal-rules"
+            />
             <p class="modal-checkbox-text">
               Oświadczam iż akceptuję
               <a class="modal-rules" href="#">Regulamin</a> i
@@ -507,7 +514,9 @@
             </p>
           </div>
 
-          <button class="modal-form-button" type="submit">Wyślij</button></div>
+          <div class="modal-button-container">
+            <button class="modal-form-button" type="submit">Wyślij</button>
+          </div>
         </form>
       </div>
     </div>
