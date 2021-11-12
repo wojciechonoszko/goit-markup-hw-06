@@ -863,10 +863,14 @@ body {
   padding: 40px;
 }
 .modal-phone-number:focus-within,
+.modal-phone-number:focus-within + .icon-phone-number,
 .modal-email:focus-within,
+.modal-email:focus-within + .icon-modal-email,
 .modal-textarea:focus-within,
-.modal-user-name:focus-within {
+.modal-user-name:focus-within,
+.modal-user-name:focus-within + .icon-user-name {
   border-color: #2196f3;
+  fill: #2196f3;
 }
 
 .modal-textarea::placeholder {
@@ -904,6 +908,7 @@ body {
 .modal-phone-number,
 .modal-email,
 .modal-user-name {
+  position: absolute;
   width: 448px;
   height: 40px;
   margin: 0;
@@ -913,6 +918,9 @@ body {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
+
+.icon-modal-email,
+.icon-phone-number,
 .icon-user-name {
   width: 18px;
   height: 18px;
@@ -945,12 +953,13 @@ body {
   width: 16px;
   height: 15px;
   border-radius: 2px;
+  margin: 0px;
+  cursor: pointer;
 }
 
 .modal-checkbox-input:checked {
-  color: #2196f3;
+  filter: hue-rotate(-12deg);
 }
-
 .modal-label-name,
 .modal-label-phone,
 .modal-label-email,
@@ -994,12 +1003,23 @@ body {
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
   color: #ffffff;
   letter-spacing: 0.06em;
   font-size: 16px;
   line-height: 1.87em;
   font-weight: bold;
   font-family: "Roboto";
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-button:hover,
+.modal-form-button:focus {
+  background-color: #98c6eb;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .modal-head-text {
@@ -1027,4 +1047,25 @@ body {
   margin: 0px;
   margin-top: 10px;
   margin-bottom: 4px;
+}
+
+.input-icon-container {
+  position: relative;
+  width: 448px;
+  height: 40px;
+}
+
+.input-icon-container input {
+  padding-left: 42px;
+}
+
+.input-icon-container svg {
+  position: absolute;
+  left: 12px;
+  top: 11px;
+}
+
+.input-icon-container:focus-within {
+  fill: #2196f3;
+  color: #2196f3;
 }
