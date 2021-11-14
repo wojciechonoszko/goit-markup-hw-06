@@ -472,28 +472,28 @@
         <button type="button" class="close-btn" data-modal-close="">X</button>
         <form class="modal-form-contact">
           <p class="modal-head-text">Zostaw swoje dane w formularzu poniżej</p>
-          <label class="modal-label-name">
+          <label class="modal-label-name" for="modal-text-name">
             <p class="modal-text-name">Imię</p>
             <div class="input-icon-container">
-              <input class="modal-user-name" type="name" name="name" />
+              <input class="modal-user-name" id="modal-text-name" type="name" name="name" />
               <svg class="icon-user-name">
                 <use href="./images/icons.svg#icon-modal-person"></use>
               </svg>
             </div>
           </label>
-          <label class="modal-label-phone">
+          <label class="modal-label-phone" for="tel">
             <p class="modal-text-phone">Telefon</p>
             <div class="input-icon-container">
-              <input class="modal-phone-number" type="tel" name="phone_number" />
+              <input class="modal-phone-number" id="tel" type="tel" name="phone_number" />
               <svg class="icon-phone-number">
                 <use href="./images/icons.svg#icon-modal-phone"></use>
               </svg>
             </div>
           </label>
-          <label class="modal-label-email">
+          <label class="modal-label-email" for="email">
             <p class="modal-text-email">Email</p>
             <div class="input-icon-container">
-              <input class="modal-email" type="email" name="email" />
+              <input class="modal-email" id="email" type="email" name="email" />
               <svg class="icon-modal-email">
                 <use href="./images/icons.svg#icon-modal-email"></use>
               </svg>
@@ -513,7 +513,8 @@
           <div class="modal-checkbox">
             <div class="checkbox-icon-container">
               <input
-                class="modal-checkbox-input"
+                class="modal-checkbox-input visually-hidden"
+                id="user-policy"
                 type="checkbox"
                 name="modal-rules"
                 value="modal-rules"
@@ -525,9 +526,6 @@
                 <a class="modal-rules" href="#">Politykę Prywatności.</a>
                 <!-- </p> -->
               </label>
-              <svg class="checkbox-icon">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg>
             </div>
             
           </div>

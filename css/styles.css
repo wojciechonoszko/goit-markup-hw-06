@@ -970,17 +970,29 @@ body {
 }
 
 .modal-checkbox-text::before {
-  display: block;
+  display: inline-block;
   content: "";
   width: 16px;
   height: 16px;
-  border: 1px solid #212121;
+  border: 1px solid black;
+  border-radius: 2px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox-input:checked + .modal-checkbox-text::before {
-  background-color: red;
-  border: none;
+  border: 1px solid #2196f3;
   background-image: url(../images/icon-check.svg)
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 .checkbox-icon {
@@ -990,7 +1002,7 @@ body {
   height: 15px;
 }
 
-.checkbox
+
 
 
 .modal-label-name,
@@ -1015,6 +1027,13 @@ body {
 .modal-checkbox-text {
   font-family: "Roboto";
   font-weight: 400;
+  width: 420px;
+  height: 24px;
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 14px;
   line-height: 1.71rem;
   letter-spacing: 0.03em;
