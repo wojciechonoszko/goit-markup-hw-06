@@ -89,15 +89,16 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-item-portfolio:hover,
-.menu-item-portfolio:focus,
-.menu-item-agencja:hover,
-.menu-item-agencja:focus,
+
 .menu-item:hover,
 .menu-item:focus {
   color: #2196f3;
 }
 
+.menu-item-portfolio,
+.menu-item-agencja {
+  color: #2196f3;
+}
 .menu-item-portfolio::after,
 .menu-item-agencja::after {
   content: "";
