@@ -880,7 +880,7 @@ body {
 .modal-textarea:focus-within,
 .modal-user-name:focus-within,
 .modal-user-name:focus-within + .icon-user-name {
-  border-color: #2196f3;
+  border: 1px solid #2196f3;
   fill: #2196f3;
 }
 
