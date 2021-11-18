@@ -801,6 +801,10 @@ body {
   padding: 15px;
 }
 
+.footer-newsletter-input:focus-within{
+  outline:none;
+}
+
 .footer-newsletter-button {
   width: 200px;
   height: 50px;
@@ -884,6 +888,7 @@ body {
 .modal-user-name:focus-within + .icon-user-name {
   border-color: #2196f3;
   fill: #2196f3;
+  outline: none;
 }
 
 .modal-textarea::placeholder {
